@@ -1,6 +1,13 @@
 # Unit 09 Node.js and ES6+ Homework: Good README Generator
 
-![GitHub repo size](https://img.shields.io/github/repo-size/seanwalmer/readmegenerator)
+![GitHub repo size](https://img.shields.io/github/repo-size/SBoudrias/inquirer.js)
+
+# Table of contents
+1. [Introduction](#introduction)
+2. [Some paragraph](#paragraph1)
+    1. [Sub paragraph](#subparagraph1)
+3. [Another paragraph](#paragraph2)
+
 
 Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
 
@@ -98,4 +105,16 @@ You are required to submit the following:
 * A generated README.md file for a project repo.
 
 * The URL of the GitHub repository
+
+## introduction
+Some introduction text, formatted in heading 2 style
+
+## paragraph1
+The first paragraph text
+
+### Sub paragraph <a name="subparagraph1"></a>
+This is a sub paragraph, formatted in heading 3 style
+
+## Another paragraph <a name="paragraph2"></a>
+The second paragraph text
 
