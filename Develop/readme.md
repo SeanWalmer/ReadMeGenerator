@@ -1,41 +1,47 @@
 
   ![GitHub repo size](https://img.shields.io/github/repo-size/seanwalmer/readmegenerator)
-  ![License](https://img.shields.io/badge/License-GNU__GPLv3-brightgreen)
-# title
+  ![License](https://img.shields.io/badge/License-MIT__License-brightgreen)
+# ReadMe Generator application
 
 ### Table of contents
 ---
 
-[discription](#discription) <br>,[usuage](#usage) <br>,[tests](##tests) <br>,[install](#install)<br>,[contributions](###contribute) <br>
+[discription](#discription) <br>,[usuage](#usage) <br>,[tests](##tests) <br>,[install](#install)<br>,[credits](#credits) <br>,[contributions](###contribute) <br>
 
 # discription
 
-discipasdfasdfasdfasdf
+This project was a homework for unit 9 after we learned about node.js. The object was to creat a readme generator that could be used on new projects. This readme was created with the generator! it has all the notable sections, a api call, badges and even a generated table of contents.
 
 # usage
 
-use
+Just run node .\index.js in the terminal and then answer prompts in the termincal to generator your file
 
 ## tests
 ---
 
-test
+there are no tests... code doesnt break right... right?
 
 # install
 
-install
+download the repo, run npm install and then make sure node.js is installed on your machine
 
 # contact
 
-if you wise to contact the author of this repo please send an email to sean@sean.com
+if you wise to contact the author of this repo please send an email to sean@email.com
 
-<img src="https://avatars3.githubusercontent.com/u/61504958?v=4">
+<img src=[object Promise]>
+
+# credits
+    
+evan - evan@email.com
+    
+noah - noah@email.com
+    
+brian - brian@email.com
 
 
-
-
-### contribute
 # Contributor Covenant Code of Conduct
+### contribute
 
 ## Our Pledge
 
