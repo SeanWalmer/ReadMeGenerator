@@ -1,5 +1,4 @@
 const contributorCov = `
-### contribute
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -130,77 +129,4 @@ https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
 `;
 
-var contribution = '';
-var credits = ''
-// a table storing the lines for the table of contents
-const contents = [
-  `[discription](#discription) <br>`,
-  `[usuage](#usage) <br>`,
-  `[tests](##tests) <br>`,
-  `[install](#install)<br>`,
-]
-function generateMarkdown(data) {
-  // if credits are present generate a credits attribute
-  if (data.creditCheck === 'yes'){
-    const credit1 = `\n${data.creditName1} - ${data.creditEmail1}`
-    const credit2 = `\n${data.creditName2} - ${data.creditEmail2}`
-    const credit3 = `\n${data.creditName3} - ${data.creditEmail3}`
-    credits = `# credits
-    ${credit1}
-    ${credit2}
-    ${credit3}`
-    contents.push("[credits](#credits) <br>")
-  }
-  // if contributors pledge
-  if (data.ContributeCheck === 'yes'){
-    contribution = contributorCov
-    contents.push(`[contributions](###contribute) <br>`)
-  }else{
-    contribution = `# Contributors
-
-    -insert your own text here-`;
-    contents.push(`[contributions](#Contributors) <br>`);
-
-  }
-  
-
-  // ---------- Stitches together the readme markdown file ---------
-  return `
-  ![GitHub repo size](https://img.shields.io/github/repo-size/${data.gitUser}/${data.gitRepo})
-  ![License](https://img.shields.io/badge/License-${data.license}-brightgreen)
-# ${data.title}
-
-## Table of contents
----
-
-${contents}
-
-# discription
-
-${data.discription}
-
-# usage
-
-${data.usage}
-
-## tests
----
-
-${data.tests}
-
-# install
-
-${data.install}
-
-# contact
-
-if you wise to contact the author of this repo please send an email to ${data.email}
-
-${credits}
-
-${contribution}
-
-`;
-}
-
-module.exports = generateMarkdown;
+module.exports = contributorCov

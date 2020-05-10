@@ -1,4 +1,47 @@
-const contributorCov = `
+
+  ![GitHub repo size](https://img.shields.io/github/repo-size/asdf/asdf)
+  ![License](https://img.shields.io/badge/License-GNU__GPLv3-brightgreen)
+# asdfasd
+
+## Table of contents
+---
+
+[discription](#discription) <br>,[usuage](#usage)
+,[tests](##tests)
+,[install](#install)
+,[credits](#credits),[contributions](###contribute)
+
+
+# discription
+
+fasdfasdfasdfasdfasdfasdf
+
+# usage
+
+adsfasdf
+
+## tests
+---
+
+asdfasd
+
+# install
+
+asdfasdf
+
+# contact
+
+if you wise to contact the author of this repo please send an email to sean@gsea.com
+
+# credits
+    
+asdf - asdrf@sea.com
+    
+asdf - asdrf@sea.com
+    
+asdf - asdrf@sea.com
+
+
 ### contribute
 # Contributor Covenant Code of Conduct
 
@@ -128,79 +171,5 @@ enforcement ladder](https://github.com/mozilla/diversity).
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
-`;
 
-var contribution = '';
-var credits = ''
-// a table storing the lines for the table of contents
-const contents = [
-  `[discription](#discription) <br>`,
-  `[usuage](#usage) <br>`,
-  `[tests](##tests) <br>`,
-  `[install](#install)<br>`,
-]
-function generateMarkdown(data) {
-  // if credits are present generate a credits attribute
-  if (data.creditCheck === 'yes'){
-    const credit1 = `\n${data.creditName1} - ${data.creditEmail1}`
-    const credit2 = `\n${data.creditName2} - ${data.creditEmail2}`
-    const credit3 = `\n${data.creditName3} - ${data.creditEmail3}`
-    credits = `# credits
-    ${credit1}
-    ${credit2}
-    ${credit3}`
-    contents.push("[credits](#credits) <br>")
-  }
-  // if contributors pledge
-  if (data.ContributeCheck === 'yes'){
-    contribution = contributorCov
-    contents.push(`[contributions](###contribute) <br>`)
-  }else{
-    contribution = `# Contributors
 
-    -insert your own text here-`;
-    contents.push(`[contributions](#Contributors) <br>`);
-
-  }
-  
-
-  // ---------- Stitches together the readme markdown file ---------
-  return `
-  ![GitHub repo size](https://img.shields.io/github/repo-size/${data.gitUser}/${data.gitRepo})
-  ![License](https://img.shields.io/badge/License-${data.license}-brightgreen)
-# ${data.title}
-
-## Table of contents
----
-
-${contents}
-
-# discription
-
-${data.discription}
-
-# usage
-
-${data.usage}
-
-## tests
----
-
-${data.tests}
-
-# install
-
-${data.install}
-
-# contact
-
-if you wise to contact the author of this repo please send an email to ${data.email}
-
-${credits}
-
-${contribution}
-
-`;
-}
-
-module.exports = generateMarkdown;

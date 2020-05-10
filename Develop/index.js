@@ -54,10 +54,46 @@ const questions = [
         },
     },
     {
+        type: 'input',
+        name: 'usage',
+        message: 'Discribe how to use the application:',
+        validate: function(value){
+            if(value === ''){
+                return 'please discribe the application before continuing';
+            }else{
+                return true;
+            };
+        },
+    },
+    {
+        type: 'input',
+        name: 'install',
+        message: 'Discribe how to install the application:',
+        validate: function(value){
+            if(value === ''){
+                return 'please discribe how to install the application before continuing';
+            }else{
+                return true;
+            };
+        },
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Discribe how to use application tests:',
+        validate: function(value){
+            if(value === ''){
+                return 'please discribe the tests and if there are none please input that as well.';
+            }else{
+                return true;
+            };
+        },
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'license type:',
-        choices: ['GNU GPLv3', 'MIT License', 'Apache License 2.0']            
+        choices: ['GNU__GPLv3', 'MIT__License', 'Apache__License__2']            
     },
     {
         type: 'input',
@@ -177,16 +213,6 @@ const questions = [
         } 
     },
     {
-        type: 'input',
-        name: 'usage',
-        message: 'Discribe how to use the application:',
-    },
-    {
-        type: 'input',
-        name: 'install',
-        message: 'Discribe how to install the application:',
-    },
-    {
         type: 'list',
         name: 'ContributeCheck',
         message: "Do you want to include the Contributor Covenant? (if you don't you will need to write your own contribution section)",
@@ -202,10 +228,10 @@ function init() {
         console.log('\nGenerating Repo with:');
         console.log(answers);
         const info = answers;
-        // fs.writeFile('test.md', generateMarkdown(info), function (err) {
-        //     if (err) throw err;
-        //     console.log('Saved to test.md!');
-        //   });
+        fs.writeFile('test.md', generateMarkdown(info), function (err) {
+            if (err) throw err;
+            console.log('Saved to test.md!');
+          });
         // console.log(JSON.stringify(answers, null, '  '));
       });
 }
