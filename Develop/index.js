@@ -228,7 +228,7 @@ function init() {
         console.log('\nGenerating Repo with:');
         console.log(answers);
         const info = answers;
-        fs.writeFile('test.md', generateMarkdown(info), function (err) {
+        fs.writeFile('readme.md', generateMarkdown(info), function (err) {
             if (err) throw err;
             console.log('Saved to test.md!');
           });

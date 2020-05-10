@@ -1,45 +1,37 @@
 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/asdf/asdf)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/seanwalmer/readmegenerator)
   ![License](https://img.shields.io/badge/License-GNU__GPLv3-brightgreen)
-# asdfasd
+# title
 
-## Table of contents
+### Table of contents
 ---
 
-[discription](#discription) <br>,[usuage](#usage)
-,[tests](##tests)
-,[install](#install)
-,[credits](#credits),[contributions](###contribute)
-
+[discription](#discription) <br>,[usuage](#usage) <br>,[tests](##tests) <br>,[install](#install)<br>,[contributions](###contribute) <br>
 
 # discription
 
-fasdfasdfasdfasdfasdfasdf
+discipasdfasdfasdfasdf
 
 # usage
 
-adsfasdf
+use
 
 ## tests
 ---
 
-asdfasd
+test
 
 # install
 
-asdfasdf
+install
 
 # contact
 
-if you wise to contact the author of this repo please send an email to sean@gsea.com
+if you wise to contact the author of this repo please send an email to sean@sean.com
 
-# credits
-    
-asdf - asdrf@sea.com
-    
-asdf - asdrf@sea.com
-    
-asdf - asdrf@sea.com
+<img src="https://avatars3.githubusercontent.com/u/61504958?v=4">
+
+
 
 
 ### contribute

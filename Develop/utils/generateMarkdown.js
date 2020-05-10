@@ -1,6 +1,8 @@
+const axios = require("axios");
+
 const contributorCov = `
-### contribute
 # Contributor Covenant Code of Conduct
+### contribute
 
 ## Our Pledge
 
@@ -139,7 +141,15 @@ const contents = [
   `[tests](##tests) <br>`,
   `[install](#install)<br>`,
 ]
+// axios call to get profile picture
+
+
+
 function generateMarkdown(data) {
+  const avatar = axios.get(`https://api.github.com/users/${data.gitUser}/repos?per_page=100`)
+  .then(function(res) {
+    return res.avatar_url
+  });
   // if credits are present generate a credits attribute
   if (data.creditCheck === 'yes'){
     const credit1 = `\n${data.creditName1} - ${data.creditEmail1}`
@@ -170,7 +180,7 @@ function generateMarkdown(data) {
   ![License](https://img.shields.io/badge/License-${data.license}-brightgreen)
 # ${data.title}
 
-## Table of contents
+### Table of contents
 ---
 
 ${contents}
@@ -195,6 +205,8 @@ ${data.install}
 # contact
 
 if you wise to contact the author of this repo please send an email to ${data.email}
+
+<img src=${avatar}>
 
 ${credits}
 
